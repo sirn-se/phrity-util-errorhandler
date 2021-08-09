@@ -7,7 +7,7 @@ The PHP [error handling](https://www.php.net/manual/en/book.errorfunc.php) can b
 Typically an application uses a system level [error handler](https://www.php.net/manual/en/function.set-error-handler.php) and/or suppressing errors using the `@` prefix.
 But those cases when your code need to act on triggered errors are more tricky.
 
-This library provides tow convenience methods to handle errors on code blocks, either by throwing exceptions or running callback code when an error occurs.
+This library provides two convenience methods to handle errors on code blocks, either by throwing exceptions or running callback code when an error occurs.
 
 Current version supports PHP `^7.2|^8.0`.
 
@@ -85,7 +85,7 @@ $result = $handler->withAll(function () {
 });
 ```
 The examples above will run the callback code, but if an error occurs it will call the error callback as well.
-* `with()` will run the error callback immediately when occured; error callback expects an ErrorException instance
+* `with()` will run the error callback immediately when error occured; error callback expects an ErrorException instance
 * `withAll()` will run the error callback when code is complete; error callback expects an array of ErrorException and the returened result of code callback
 
 ### Filtering error types
