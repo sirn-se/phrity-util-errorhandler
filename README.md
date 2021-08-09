@@ -143,4 +143,4 @@ Phrity\Util\ErrorHandler {
 
 | Version | PHP | |
 | --- | --- | --- |
-| `1.0` | `^7.2|^8.0` | Initial version |
+| `1.0` | `^7.2\|^8.0` | Initial version |
