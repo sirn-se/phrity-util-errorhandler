@@ -54,6 +54,7 @@ class ErrorHandler
     public function with(callable $callback, $handling = null, int $levels = E_ALL)
     {
         $error = null;
+        $result = null;
         try {
             $this->set(null, $levels);
             $result = $callback();
