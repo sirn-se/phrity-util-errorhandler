@@ -86,7 +86,7 @@ $result = $handler->withAll(function () {
 ```
 The examples above will run the callback code, but if an error occurs it will call the error callback as well.
 * `with()` will run the error callback immediately when error occured; error callback expects an ErrorException instance
-* `withAll()` will run the error callback when code is complete; error callback expects an array of ErrorException and the returened result of code callback
+* `withAll()` will run the error callback when code is complete; error callback expects an array of ErrorException and the returned result of code callback
 
 ### Filtering error types
 
