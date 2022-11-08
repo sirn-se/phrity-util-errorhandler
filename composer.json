@@ -14,12 +14,12 @@
   ],
   "autoload": {
     "psr-4": {
-      "": "src/"
+      "Phrity\\Util\\": "src/"
     }
   },
   "autoload-dev": {
     "psr-4": {
-      "": "tests/"
+      "Phrity\\Util\\Tests\\": "tests/"
     }
   },
   "require": {

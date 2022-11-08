@@ -7,7 +7,7 @@
 
 declare(strict_types=1);
 
-namespace Phrity\Util;
+namespace Phrity\Util\Tests;
 
 use ErrorException;
 use RuntimeException;
