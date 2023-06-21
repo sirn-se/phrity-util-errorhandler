@@ -94,7 +94,7 @@ jobs:
     - name: Test
       run: make test
 
-  test-8-2:
+  test-8-3:
     runs-on: ubuntu-latest
     name: Test PHP 8.3
     steps:
