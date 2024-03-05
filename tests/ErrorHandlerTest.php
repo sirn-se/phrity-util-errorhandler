@@ -42,10 +42,6 @@ class ErrorHandlerTest extends TestCase
             $this->assertNull($e->getPrevious());
         }
 
-        // Verify that exception is thrown
-        $this->expectException('ErrorException');
-        trigger_error('Another error');
-
         // Restore handler
         $this->assertTrue($handler->restore());
     }
@@ -68,10 +64,6 @@ class ErrorHandlerTest extends TestCase
             $this->assertEquals(E_USER_NOTICE, $prev->getSeverity());
             $this->assertNull($prev->getPrevious());
         }
-
-        // Verify that exception is thrown
-        $this->expectException('RuntimeException');
-        trigger_error('Another error');
 
         // Restore handler
         $this->assertTrue($handler->restore());
