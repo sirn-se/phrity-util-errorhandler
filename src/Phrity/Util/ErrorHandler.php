@@ -60,8 +60,9 @@ class ErrorHandler
             $result = $callback();
         } catch (ErrorException $e) {
             $error = $this->handle($handling, $e);
+        } finally {
+            $this->restore();
         }
-        $this->restore();
         return $error ?: $result;
     }
 
