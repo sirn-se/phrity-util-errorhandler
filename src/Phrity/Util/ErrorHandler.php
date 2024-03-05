@@ -83,8 +83,8 @@ class ErrorHandler
             $errors[] = $e;
         }, $levels);
         $result = $callback();
-        $error = empty($errors) ? null : $this->handle($handling, $errors, $result);
         $this->restore();
+        $error = empty($errors) ? null : $this->handle($handling, $errors, $result);
         return $error ?: $result;
     }
 
