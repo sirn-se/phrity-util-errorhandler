@@ -63,7 +63,7 @@ class ErrorHandler
         } finally {
             $this->restore();
         }
-        return $error ?: $result;
+        return $error ?? $result;
     }
 
     /**
@@ -85,8 +85,9 @@ class ErrorHandler
         $result = $callback();
         $this->restore();
         $error = empty($errors) ? null : $this->handle($handling, $errors, $result);
-        return $error ?: $result;
+        return $error ?? $result;
     }
+
 
     /* ----------------- Private helpers --------------------------------------------- */
 
