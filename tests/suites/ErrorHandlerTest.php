@@ -59,6 +59,7 @@ class ErrorHandlerTest extends TestCase
             $this->assertEquals(23, $e->getCode());
             $this->assertNotNull($e->getPrevious());
             $prev = $e->getPrevious();
+            $this->assertInstanceOf(ErrorException::class, $prev);
             $this->assertEquals('An error', $prev->getMessage());
             $this->assertEquals(0, $prev->getCode());
             $this->assertEquals(E_USER_NOTICE, $prev->getSeverity());
@@ -150,6 +151,7 @@ class ErrorHandlerTest extends TestCase
             $this->assertEquals(23, $e->getCode());
             $this->assertNotNull($e->getPrevious());
             $prev = $e->getPrevious();
+            $this->assertInstanceOf(ErrorException::class, $prev);
             $this->assertEquals('An error', $prev->getMessage());
             $this->assertEquals(0, $prev->getCode());
             $this->assertEquals(E_USER_NOTICE, $prev->getSeverity());
@@ -251,6 +253,7 @@ class ErrorHandlerTest extends TestCase
             $this->assertEquals(23, $e->getCode());
             $this->assertNotNull($e->getPrevious());
             $prev = $e->getPrevious();
+            $this->assertInstanceOf(ErrorException::class, $prev);
             $this->assertEquals('An error', $prev->getMessage());
             $this->assertEquals(0, $prev->getCode());
             $this->assertEquals(E_USER_NOTICE, $prev->getSeverity());

@@ -1,3 +1,5 @@
+<p align="center"><img src="docs/logotype.png" alt="Phrity Net Uri" width="100%"></p>
+
 [![Build Status](https://github.com/sirn-se/phrity-util-errorhandler/actions/workflows/acceptance.yml/badge.svg)](https://github.com/sirn-se/phrity-util-errorhandler/actions)
 [![Coverage Status](https://coveralls.io/repos/github/sirn-se/phrity-util-errorhandler/badge.svg?branch=main)](https://coveralls.io/github/sirn-se/phrity-util-errorhandler?branch=main)
 
@@ -143,5 +145,6 @@ Phrity\Util\ErrorHandler {
 
 | Version | PHP | |
 | --- | --- | --- |
+| `1.2` | `^8.1` | Some improvements |
 | `1.1` | `^7.4\|^8.0` | Some improvements |
 | `1.0` | `^7.2\|^8.0` | Initial version |
