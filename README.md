@@ -1,4 +1,4 @@
-<p align="center"><img src="docs/logotype.png" alt="Phrity Net Uri" width="100%"></p>
+<p align="center"><img src="docs/logotype.png" alt="Phrity Util ErrorHandler" width="100%"></p>
 
 [![Build Status](https://github.com/sirn-se/phrity-util-errorhandler/actions/workflows/acceptance.yml/badge.svg)](https://github.com/sirn-se/phrity-util-errorhandler/actions)
 [![Coverage Status](https://coveralls.io/repos/github/sirn-se/phrity-util-errorhandler/badge.svg?branch=main)](https://coveralls.io/github/sirn-se/phrity-util-errorhandler?branch=main)
