@@ -34,6 +34,7 @@ class ErrorHandlerTest extends TestCase
 
         // Verify exception
         try {
+            /** @throws ErrorException */
             trigger_error('An error');
         } catch (ErrorException $e) {
             $this->assertEquals('An error', $e->getMessage());
@@ -53,6 +54,7 @@ class ErrorHandlerTest extends TestCase
 
         // Verify exception
         try {
+            /** @throws RuntimeException */
             trigger_error('An error');
         } catch (RuntimeException $e) {
             $this->assertEquals('A provided exception', $e->getMessage());
@@ -107,6 +109,7 @@ class ErrorHandlerTest extends TestCase
 
         // Verify exception
         try {
+            /** @throws ErrorException */
             $result = $handler->with(function () use (&$check) {
                 trigger_error('An error');
                 $check = true;
@@ -141,6 +144,7 @@ class ErrorHandlerTest extends TestCase
 
         // Verify exception
         try {
+            /** @throws RuntimeException */
             $result = $handler->with(function () use (&$check) {
                 trigger_error('An error');
                 $check = true;
@@ -209,6 +213,7 @@ class ErrorHandlerTest extends TestCase
 
         // Verify exception
         try {
+            /** @throws ErrorException */
             $result = $handler->withAll(function () use (&$check) {
                 trigger_error('An error');
                 $check = true;
@@ -243,6 +248,7 @@ class ErrorHandlerTest extends TestCase
 
         // Verify exception
         try {
+            /** @throws RuntimeException */
             $result = $handler->withAll(function () use (&$check) {
                 trigger_error('An error');
                 $check = true;
