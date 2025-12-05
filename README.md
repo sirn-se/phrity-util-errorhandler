@@ -11,8 +11,6 @@ But those cases when your code need to act on triggered errors are more tricky.
 
 This library provides two convenience methods to handle errors on code blocks, either by throwing exceptions or running callback code when an error occurs.
 
-Current version supports PHP `^7.2|^8.0`.
-
 ## Installation
 
 Install with [Composer](https://getcomposer.org/);
